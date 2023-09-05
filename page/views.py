@@ -29,8 +29,42 @@ def login(request):
             'form': UserCreationForm,
             'error': 'las contraseña no coinciden'  
             })  
-                
-            
+
+def CarritoCompras(request): 
+    return render(request, 'CarritoCompras.html')    
+
+def CatalogoProducto(request): 
+    return render(request, 'CatalogoProductos.html')  
+
+def Compra(request): 
+    return render(request, 'Compra.html')
+
+def GestionCompra(request): 
+    return render(request, 'GestionCompra.html')
+
+def GestionVenta(request): 
+    return render(request, 'GestionVenta.html')      
+
+def MetodoPago(request): 
+    return render(request, 'MetodoPago.html')  
+
+def ProductoDetalle(request): 
+    return render(request, 'ProductoDetalle.html')  
+
+def Proveedores(request): 
+    return render(request, 'Proveedores.html')
+
+def RecuperacionContraseña(request): 
+    return render(request, 'Recuperacion.html')    
+
+def RegistrosUsuarios(request): 
+    return render(request, 'RegistrosUsuarios.html')
+
+def Roles(request): 
+    return render(request, 'Roles.html')
+
+def VentasRealizadas(request): 
+    return render(request, 'VentasRealizadas.html')     
             
             
         
