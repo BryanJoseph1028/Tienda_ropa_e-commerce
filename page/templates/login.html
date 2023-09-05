@@ -1,8 +1,9 @@
 <h1>hello</h1>
-    <form action="/login/" method="POST">
-        {% csrf_token %}} #envia el form por medio de un post
-        {{form.as_p}} #genera el formulario 
+    <form method="POST">
+        {{error}}
+    {% csrf_token %} <!-- envia el form por medio de un post-->
+        {{form.as_p}} <!--#genera el formulario -->
     </form>
 <button>
-    Login 
+    Login
 </button>

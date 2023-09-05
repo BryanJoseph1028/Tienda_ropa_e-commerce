@@ -21,7 +21,14 @@ from page import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'), #index
-    path('login/', views.login, name='login'), #son las rutas del login
+    path('login/', views.login, name='login'),#son las rutas
+    path('Registro/', views.login, name='RegistroUsuario'),
+    path('Carrito/', views.login, name='CarritoCompras'),
+    path('Catalogo/', views.login, name='CatalogoProductos'),
+    path('Detalle/', views.login, name='DetalleProducto'),
+    path('Compra/', views.login, name='Compra'),
+    
+    
     
 ]
 
