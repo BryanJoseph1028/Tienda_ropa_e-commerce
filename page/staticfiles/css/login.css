@@ -1,0 +1,128 @@
+/* Estilo global */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #1b5583;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+/* Contenedor principal del formulario */
+.formatoLogin {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título del formulario */
+.titulo h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+/* Imagen de usuario */
+.fotoUsuario img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Campos de entrada */
+.datoUsuario input,
+.datoPassword input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de inicio de sesión */
+.btValidacion button {
+    background-color: #1b5583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btValidacion button:hover {
+    background-color: #000;
+}
+
+/* Enlaces de ayuda */
+.helpLinks a {
+    text-decoration: none;
+    color: #1b5583;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1b5583;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Redes sociales en el pie de página */
+.redes-sociales a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Imágenes de redes sociales */
+.redes-sociales img {
+    max-width: 30px;
+    vertical-align: middle;
+}
+
+/* Añade más estilos según sea necesario */
+
+

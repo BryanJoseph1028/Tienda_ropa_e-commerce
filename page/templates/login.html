@@ -1,9 +1,68 @@
-<h1>hello</h1>
-    <form method="POST">
-        {{error}}
-    {% csrf_token %} <!-- envia el form por medio de un post-->
-        {{form.as_p}} <!--#genera el formulario -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/iconos/icon/login.png">
+    <title>Login</title>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <header>
+            <h1>Login</h1>
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Catálogo</a></li>
+                    <li><a href="../html/ofertas.html">Ofertas</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a href="../html/login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="formatoLogin">
+            <div class="titulo">
+                <h2>Login</h2>
+            </div>
+
+            <div class="fotoUsuario">
+                <img src="../img/iconos/icon/agregarUsuario.png" alt="Agregar Usuario">
+            </div>
+
+            <div class="datoUsuario">
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
+            </div>
+
+            <div class="datoPassword">
+                <input type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+            </div>
+
+            <div class="btValidacion">
+                <button type="submit">Iniciar Sesión</button>
+            </div>
+            
+            <div class="helpLinks">
+                <a href="recuperarUsuario.html">Olvidé mi Usuario</a>
+                <a href="recuperarPassword.html">Olvidé mi Contraseña</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="redes-sociales">
+                <a href="#"><img src="../img/iconos/icon/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/iconos/icon/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com/people/MTA-El-Portal-De-La-Moda/100090363232444/?mibextid=ZbWKwL"><img src="../img/iconos/icon/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/iconos/icon/ubicacion.png" alt="Ubicación"></a>
+                <a href="#"><img src="../img/iconos/icon/horario.png" alt="Horario"></a>
+                <a href="#"><img src="../img/iconos/icon/telefono.png" alt="Teléfono"></a>
+            </div>
+            <p>&copy; El portal de la moda. Todos los derechos reservados.</p>
+        </footer>
+
     </form>
-<button>
-    Login
-</button>
+</body>
+</html>
