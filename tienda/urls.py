@@ -20,13 +20,36 @@ from page import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('', views.home, name='home'), #index
+    
     path('login/', views.login, name='login'),#son las rutas
+    
     path('Registro/', views.RegistrosUsuarios, name='RegistroUsuario'),
-    path('Carrito/', views.Compra, name='CarritoCompras'),
-    path('Catalogo/', views.login, name='CatalogoProductos'),
-    path('Detalle/', views.login, name='DetalleProducto'),
-    path('Compra/', views.login, name='Compra'),
+    
+    path('Carrito/', views.CarritoCompra, name='Carrito'),
+    
+    path('Catalogo/', views.CatalogoProducto, name='CatalogoProductos'),
+    
+    path('Detalle/', views.ProductoDetalle, name='DetalleProducto'),
+    
+    path('Dashboard/', views.Dashboard, name='Dashboard'),    
+    
+    path('GestionCompra/', views.GestionCompra, name='GestionCompra'),
+    
+    path('GestionVenta/', views.GestionVenta, name='GestionVenta'),
+    
+    path('GenerarPedido/', views.GenerarPedido, name='GenerarPedido'),
+    
+    path('PedidoRealizado/', views.PedidoRealizado, name='PedidoRealizado'),
+    
+    path('Proveedores/', views.Proveedores, name='Proveedores'),
+    
+    path('Recuperacion/', views.RecuperacionContraseña, name='RecuperacionContraseña'),
+    
+    path('Roles/', views.Roles, name='Roles'),
+
+    path('VentasRealizadas/', views.VentasRealizadas, name='VentasRealizadas'),
     
     
     

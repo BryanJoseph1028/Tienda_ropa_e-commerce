@@ -42,17 +42,23 @@ def Compra(request):
 def GestionCompra(request): 
     return render(request, 'GestionCompra.html')
 
+def Dashboard(request): 
+    return render(request, 'Dashboard.html')
+
 def GestionVenta(request): 
     return render(request, 'GestionVenta.html')      
 
-def MetodoPago(request): 
-    return render(request, 'MetodoPago.html')  
+def GenerarPedido(request): 
+    return render(request, 'GenerarPedido.html')   
 
 def ProductoDetalle(request): 
     return render(request, 'ProductoDetalle.html')  
 
 def Proveedores(request): 
     return render(request, 'Proveedores.html')
+
+def PedidoRealizado(request): 
+    return render(request, 'PedidoRealizado.html')
 
 def RecuperacionContraseña(request): 
     return render(request, 'Recuperacion.html')    
